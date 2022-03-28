@@ -29,24 +29,22 @@ class FlickPortraitControls extends StatelessWidget {
       children: <Widget>[
         Positioned.fill(
           child: FlickShowControlsAction(
-            child: FlickSeekVideoAction(
-              child: Center(
-                child: FlickVideoBuffer(
-                  child: FlickAutoHideChild(
-                    showIfVideoNotInitialized: false,
-                    child: FlickPlayToggle(
-                      size: 30,
-                      color: Colors.black,
-                      padding: EdgeInsets.all(12),
-                      decoration: BoxDecoration(
-                        color: Colors.white70,
-                        borderRadius: BorderRadius.circular(40),
-                      ),
+            child: Center(
+              child: FlickVideoBuffer(
+                child: FlickAutoHideChild(
+                  showIfVideoNotInitialized: false,
+                  child: FlickPlayToggle(
+                    size: 30,
+                    color: Colors.black,
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                      color: Colors.white70,
+                      borderRadius: BorderRadius.circular(40),
                     ),
                   ),
                 ),
               ),
-            ),
+            )
           ),
         ),
         Positioned.fill(
@@ -94,9 +92,9 @@ class FlickPortraitControls extends StatelessWidget {
                       Expanded(
                         child: Container(),
                       ),
-                      FlickSubtitleToggle(
-                        size: iconSize,
-                      ),
+                      // FlickSubtitleToggle(
+                      //   size: iconSize,
+                      // ),
                       SizedBox(
                         width: iconSize / 2,
                       ),

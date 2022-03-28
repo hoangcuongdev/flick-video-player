@@ -29,6 +29,7 @@ class FlickVideoProgressBar extends StatelessWidget {
 
     if (videoPlayerValue == null) return Container();
 
+    @Deprecated("Unused")
     void seekToRelativePosition(Offset globalPosition) {
       final box = context.findRenderObject() as RenderBox;
       final Offset tapPos = box.globalToLocal(globalPosition);
@@ -70,7 +71,7 @@ class FlickVideoProgressBar extends StatelessWidget {
           if (!videoPlayerValue.isInitialized) {
             return;
           }
-          seekToRelativePosition(details.globalPosition);
+          // seekToRelativePosition(details.globalPosition);
 
           if (onDragUpdate != null) {
             onDragUpdate!();
@@ -87,7 +88,7 @@ class FlickVideoProgressBar extends StatelessWidget {
           if (!videoPlayerValue.isInitialized) {
             return;
           }
-          seekToRelativePosition(details.globalPosition);
+          // seekToRelativePosition(details.globalPosition);
         },
       );
     });
